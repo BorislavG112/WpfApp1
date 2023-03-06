@@ -1,0 +1,20 @@
+﻿<Window x:Class="Project.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project"
+        mc:Ignorable="d"
+        Title="Page2" Height="480" Width="250">
+    <Grid Background="#FFFFB0B0">
+        <TextBox Text="Sign Up" HorizontalAlignment="Center" Margin="0,51,0,0" VerticalAlignment="Top" Background="White"/>
+        <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Margin="62,157,0,0" Text="Username" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="62,203,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="62,250,0,0" Text="Email" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPhoneNumber" HorizontalAlignment="Left" Margin="62,303,0,0" Text="Phone number" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Submit" Content="Submit" Margin="89,348,89,0" Background="#545d6a" VerticalAlignment="Top" Foreground="white" Click="Submit_Click" Height="29"  />
+
+        <ComboBox x:Name="cmbx_1" HorizontalAlignment="Left" Margin="62,108,0,0" VerticalAlignment="Top" Width="120" ItemsSource="{Binding role}" SelectionChanged="ComboBox_SelectionChanged_3"/>
+        <Button Content="Back " HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Background="White" Width="62" Click="Button_Click2" />
+    </Grid>
+</Window>
