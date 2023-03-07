@@ -35,7 +35,7 @@
                 </TransformGroup>
             </Ellipse.RenderTransform>
         </Ellipse>
-        <DataGrid x:Name="DataGrid1" Grid.Row="1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,57,0,158"/>
+        <DataGrid x:Name="DataGrid1" Grid.Row="1" Margin="0,57,0,158"/>
         <Button Content="Load Table" HorizontalAlignment="Center" Margin="0,287,0,0" Grid.Row="1" VerticalAlignment="Top" Click="LoadTable"/>
     </Grid>
 </Window>

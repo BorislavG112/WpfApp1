@@ -11,7 +11,7 @@
             <RowDefinition Height="39.003"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button Content="Information for Doctors" HorizontalAlignment="Center" Margin="0,18,0,0" VerticalAlignment="Top" Width="146" Grid.Row="1"  Background="White" Click="Button_Click"/>
+        <Button Content="Information for Doctors" HorizontalAlignment="Center" Margin="0,18,0,0" VerticalAlignment="Top" Width="146" Grid.Row="1"  Background="White" Click="Button_Click2"/>
         <Button Content="Go back" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top"  Background="White" Width="66" Click="Button_Click"/>
         <DataGrid x:Name="DataGrid_" Margin="98,91,98,132"/>
         <Ellipse HorizontalAlignment="Left" Height="196" Margin="107,287,0,0" Stroke="White" VerticalAlignment="Top" Width="197" RenderTransformOrigin="0.5,0.5" Fill="White" Grid.Row="1">
@@ -34,5 +34,11 @@
                 </TransformGroup>
             </Ellipse.RenderTransform>
         </Ellipse>
-    </Grid>
+    <TextBlock x:Name="IDblock" HorizontalAlignment="Left" Margin="42,69.667,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="174"/>
+    <TextBlock x:Name="txtFirstNameblock" HorizontalAlignment="Left" Margin="42,99.667,0,0" Grid.Row="1" TextWrapping="Wrap"  VerticalAlignment="Top" Width="153"/>
+    <TextBlock x:Name="PasswordBoxblock" HorizontalAlignment="Left" Margin="42,132.667,0,0" Grid.Row="1" TextWrapping="Wrap"  VerticalAlignment="Top" Width="153"/>
+    <TextBlock x:Name="Phoneblock" HorizontalAlignment="Left" Margin="42,165.667,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
+    <TextBlock x:Name="emailblock" HorizontalAlignment="Left" Margin="42,198.667,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" RenderTransformOrigin="0.299,8.232"/>
+    <TextBlock x:Name="Roleblock" HorizontalAlignment="Left" Margin="42,231.667,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" RenderTransformOrigin="0.299,8.232"/>
+  </Grid>
 </Window>

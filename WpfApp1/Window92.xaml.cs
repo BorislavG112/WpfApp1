@@ -30,5 +30,10 @@ namespace Project
             w1.Show();
             this.Close();
         }
+
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

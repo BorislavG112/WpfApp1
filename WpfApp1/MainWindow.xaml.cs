@@ -48,26 +48,37 @@ namespace Project
                 sqlCommand.Parameters.AddWithValue("@txtFirstName", txtFirstName.Text);
                 sqlCommand.Parameters.AddWithValue("@PasswordBox", PasswordBox.Password);
                 int count = Convert.ToInt32(sqlCommand.ExecuteScalar()); //returns the first record in the first row and the first column of your database
+
+                string query2 = "SELECT Role FROM Sign_UpDetails Where txtFirstName=@txtFirstName";
+                SqlCommand sqlCommand2 = new SqlCommand(query2, sqlCon);
+                sqlCommand2.Parameters.AddWithValue("@txtFirstName", txtFirstName.Text);
+                //sqlCommand.Parameters.AddWithValue("@PasswordBox", PasswordBox.Password);
+                string Role = Convert.ToString(sqlCommand2.ExecuteNonQuery());
+
                 if (count == 1)
                 {
-                    if (sqlCommand.ToString().Contains("Doctor"))
+                    if (Role.Contains("Doctor"))
                     {
                         Window4 w1 = new Window4();
                         w1.Show();
                         //NavigationService.Navigate(new Uri("/Window3.xaml?key1=" + txtFirstName.Text, UriKind.Relative
                         this.Close();
                     }
-                    if (sqlCommand.ToString().Contains("Nurse"))
+                    if (Role.Contains("Nurse"))
                     {
                         Window2 w1 = new Window2();
                         w1.Show();
                         this.Close();
                     }
-                    if (sqlCommand.ToString().Contains("Patient"))
+                    if (Role.Contains("Patient"))
                     {
                         Window5 w1 = new Window5();
                         w1.Show();
                         this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show(Role);
                     }
 
 

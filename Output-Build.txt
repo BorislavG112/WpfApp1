@@ -1,0 +1,10 @@
+﻿1>------ Build started: Project: WpfApp1, Configuration: Debug|AnyCPU ------
+1>H:\Project3\WpfApp1\Window92.xaml.cs(24,34,24,34): error CS1002: ; expected
+1>H:\Project3\WpfApp1\Window91.xaml.cs(35,151,35,151): error CS1002: ; expected
+1>H:\Project3\WpfApp1\Window91.xaml.cs(41,144,41,147): error CS1002: ; expected
+1>H:\Project3\WpfApp1\Window91.xaml.cs(58,18,58,18): error CS1003: Syntax error, 'try' expected
+1>H:\Project3\WpfApp1\Window91.xaml.cs(58,18,58,18): error CS1514: { expected
+1>H:\Project3\WpfApp1\Window91.xaml.cs(58,18,58,18): error CS1513: } expected
+1>H:\Project3\WpfApp1\Window92.xaml.cs(30,22,30,22): error CS1002: ; expected
+1>H:\Project3\WpfApp1\Window92.xaml.cs(31,25,31,25): error CS1002: ; expected
+========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
